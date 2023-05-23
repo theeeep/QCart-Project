@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "1025762175606",
+    "project_id": "qcart2",
+    "storage_bucket": "qcart2.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1025762175606:android:87ae9e3299b960a1604d57",
+        "android_client_info": {
+          "package_name": "com.example.ecommerce_app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1025762175606-i7ilolpja0ln5tbfjvbnv78o40ij3gga.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDILFQGRIwdJCCY89iT5ROtQFSTAATs5WA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1025762175606-i7ilolpja0ln5tbfjvbnv78o40ij3gga.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
