@@ -1,6 +1,9 @@
+import 'package:ecommerce_app/screens/qrScan.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_barcode_scanner/flutter_barcode_scanner.dart';
 
+import '../pages/home_page.dart';
+import '../pages/qcart.dart';
 import '../product_data.dart';
 import 'checkout_page.dart';
 
@@ -23,10 +26,20 @@ class _QrScanPageState extends State<QrScanPage> {
       ),
     );
 
+    // Navigator.pushReplacement(
+    //   context,
+    //   MaterialPageRoute(
+    //     builder: (context) {
+    //       return const QrScanner();
+    //     },
+    //   ),
+    // );
+
     Navigator.push(
       context,
       MaterialPageRoute(
         builder: (context) => CheckoutPage(cartItems: cartItems),
+        // builder: (context) => QrScanner(),
       ),
     );
   }
@@ -38,12 +51,20 @@ class _QrScanPageState extends State<QrScanPage> {
     // Call your API or perform actions based on the scanned barcode
     // For simplicity, we'll just add a hardcoded product to the cart
     if (barcodeScanRes.isNotEmpty) {
-      Product product = Product(
-        name: 'Sample Product',
-        price: 19.99,
-        barcode: barcodeScanRes,
+      // Product product = Product(
+      //   name: 'Sample Product',
+      //   price: 19.99,
+      //   barcode: barcodeScanRes,
+      // );
+      // addToCart(product);
+      Navigator.pushReplacement(
+        context,
+        MaterialPageRoute(
+          builder: (context) {
+            return QCart();
+          },
+        ),
       );
-      addToCart(product);
     }
   }
 

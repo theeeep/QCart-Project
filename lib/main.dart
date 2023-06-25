@@ -1,18 +1,23 @@
+import 'package:ecommerce_app/pages/cart_page.dart';
+import 'package:ecommerce_app/pages/home_page.dart';
+import 'package:ecommerce_app/pages/intro_screen.dart';
+import 'package:ecommerce_app/pages/qcart.dart';
+import 'package:ecommerce_app/pages/welcomePage.dart';
 import 'package:ecommerce_app/product_data.dart';
 import 'package:ecommerce_app/qrScan.dart';
 import 'package:ecommerce_app/screens/home.dart';
+import 'package:ecommerce_app/screens/list_cart.dart';
 import 'package:ecommerce_app/screens/login.dart';
 import 'package:ecommerce_app/screens/payment.dart';
 import 'package:ecommerce_app/screens/profile.dart';
 import 'package:ecommerce_app/screens/qrScan.dart';
 import 'package:ecommerce_app/screens/second.dart';
 import 'package:ecommerce_app/utils/application_state.dart';
-import 'package:ecommerce_app/utils/cumstom_theme.dart';
+import 'package:ecommerce_app/utils/custom_theme.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_barcode_scanner/flutter_barcode_scanner.dart';
 import 'package:provider/provider.dart';
-
 import 'checkout_page.dart';
 import 'firebase_options.dart';
 
@@ -72,14 +77,14 @@ class EcommerceApp extends StatelessWidget {
               indicatorColor: Colors.transparent,
               tabs: [
                 Tab(icon: Icon(Icons.home)),
-                Tab(icon: Icon(Icons.person)),
                 Tab(icon: Icon(Icons.qr_code_scanner)),
+                Tab(icon: Icon(Icons.person)),
               ]),
         ),
         body: TabBarView(children: [
-          HomeScreen(),
-          ProfileScreen(),
+          WelComeScreen(),
           QrScanner(),
+          ProfileScreen(),
         ]),
       ),
     );

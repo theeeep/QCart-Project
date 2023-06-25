@@ -6,7 +6,7 @@ import 'package:provider/provider.dart';
 
 import '../components/custom_button.dart';
 import '../components/custom_text_input.dart';
-import '../utils/cumstom_theme.dart';
+import '../utils/custom_theme.dart';
 import '../utils/login_data.dart';
 
 class LoginScreen extends StatefulWidget {

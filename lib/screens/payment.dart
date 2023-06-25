@@ -42,7 +42,7 @@ class _PaymentPageState extends State<PaymentPage> {
     var size = MediaQuery.of(context).size;
     return Scaffold(
       appBar: const CupertinoNavigationBar(
-        middle: Text("Procced to Payment \n    Enter Amount"),
+        middle: Text("Check Out 💳"),
       ),
       body: Container(
         height: size.height,

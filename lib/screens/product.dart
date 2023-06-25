@@ -2,7 +2,7 @@ import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
 
 import '../components/custom_button.dart';
-import '../utils/cumstom_theme.dart';
+import '../utils/custom_theme.dart';
 
 
 class ProductScreen extends StatefulWidget {

@@ -2,7 +2,7 @@ import 'package:ecommerce_app/screens/second.dart';
 import 'package:flutter/material.dart';
 
 
-import '../utils/cumstom_theme.dart';
+import '../utils/custom_theme.dart';
 import 'first.dart';
 
 class QrScanner extends StatelessWidget {

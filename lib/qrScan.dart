@@ -2,14 +2,14 @@ import 'package:ecommerce_app/product_data.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_barcode_scanner/flutter_barcode_scanner.dart';
 import 'checkout_page.dart';
-class HomePage extends StatefulWidget {
-  const HomePage({Key? key}) : super(key: key);
+class QrScann extends StatefulWidget {
+  const QrScann({Key? key}) : super(key: key);
 
   @override
-  _HomePageState createState() => _HomePageState();
+  _QrScannState createState() => _QrScannState();
 }
 
-class _HomePageState extends State<HomePage> {
+class _QrScannState extends State<QrScann> {
   final List<Product> cartItems = [];
 
   void addToCart(Product product) {
