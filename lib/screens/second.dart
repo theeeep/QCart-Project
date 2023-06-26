@@ -1,3 +1,4 @@
+import 'package:ecommerce_app/screens/payment.dart';
 import 'package:ecommerce_app/screens/qrScan.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_barcode_scanner/flutter_barcode_scanner.dart';
@@ -5,7 +6,6 @@ import 'package:flutter_barcode_scanner/flutter_barcode_scanner.dart';
 import '../pages/home_page.dart';
 import '../pages/qcart.dart';
 import '../product_data.dart';
-import 'checkout_page.dart';
 
 class QrScanPage extends StatefulWidget {
   const QrScanPage({Key? key}) : super(key: key);
@@ -38,8 +38,7 @@ class _QrScanPageState extends State<QrScanPage> {
     Navigator.push(
       context,
       MaterialPageRoute(
-        builder: (context) => CheckoutPage(cartItems: cartItems),
-        // builder: (context) => QrScanner(),
+        builder: (context) => PaymentPage(),
       ),
     );
   }
