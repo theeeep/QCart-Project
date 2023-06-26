@@ -63,12 +63,12 @@ class EcommerceApp extends StatelessWidget {
       length: 3,
       child: Scaffold(
         backgroundColor: Colors.white,
-        appBar: AppBar(
-          title: Text("Qcart"),
-        ),
+        // appBar: AppBar(
+        //   title: Text("Qcart"),
+        // ),
         bottomNavigationBar: Container(
           decoration: const BoxDecoration(
-              color: Colors.white,
+              color: Colors.black12,
               borderRadius: BorderRadius.only(
                   topLeft: Radius.circular(35), topRight: Radius.circular(35)),
               boxShadow: CustomTheme.cardShadow),

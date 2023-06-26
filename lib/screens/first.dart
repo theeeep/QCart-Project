@@ -5,7 +5,6 @@ import 'package:flutter/material.dart';
 
 import '../utils/custom_theme.dart';
 
-
 class First extends StatefulWidget {
   @override
   _FirstState createState() => _FirstState();

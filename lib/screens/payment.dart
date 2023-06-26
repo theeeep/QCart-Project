@@ -1,6 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:razorpay_flutter/razorpay_flutter.dart';
+import '../model/cart_model.dart';
 
 class PaymentPage extends StatefulWidget {
   const PaymentPage({Key? key}) : super(key: key);
@@ -56,6 +57,7 @@ class _PaymentPageState extends State<PaymentPage> {
                 controller: amountController,
                 decoration:
                     const InputDecoration(hintText: "Enter your Amount"),
+                // Text('\₹${value.calculateTotal()}')
               ),
             ),
             CupertinoButton(

@@ -1,7 +1,6 @@
 import 'package:ecommerce_app/screens/second.dart';
 import 'package:flutter/material.dart';
 
-
 import '../utils/custom_theme.dart';
 import 'first.dart';
 
@@ -14,7 +13,7 @@ class QrScanner extends StatelessWidget {
       length: 2,
       child: Scaffold(
         appBar: AppBar(
-          backgroundColor: CustomTheme.qWhiteColor,
+          backgroundColor: CustomTheme.qSecondaryColor,
           bottom: const TabBar(
             tabs: [
               Tab(

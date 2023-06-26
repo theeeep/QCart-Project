@@ -1,7 +1,7 @@
 import 'package:ecommerce_app/screens/product.dart';
 import 'package:flutter/material.dart';
 
-import '../components/grid._card.dart';
+// import '../components/grid._card.dart';
 import 'login.dart';
 
 class HomeScreen extends StatefulWidget {
@@ -27,7 +27,7 @@ class _HomeScreenState extends State<HomeScreen> {
           gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
               crossAxisCount: 2, mainAxisSpacing: 30, crossAxisSpacing: 30),
           itemBuilder: (BuildContext context, int index) {
-            return GridCard(index: index, onPress: onCardPress);
+            // return GridCard(index: index, onPress: onCardPress);
           }),
     );
   }

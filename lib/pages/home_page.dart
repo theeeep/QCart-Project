@@ -1,9 +1,11 @@
+import 'package:ecommerce_app/screens/qrScan.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:provider/provider.dart';
-
 import '../components/grocery_item_tile.dart';
+import '../main.dart';
 import '../model/cart_model.dart';
+import '../screens/profile.dart';
 import 'cart_page.dart';
 
 class HomePage extends StatefulWidget {
@@ -28,7 +30,7 @@ class _HomePageState extends State<HomePage> {
           ),
         ),
         title: Text(
-          'Sydney, Australia',
+          'Daman, India',
           style: TextStyle(
             fontSize: 16,
             color: Colors.grey[700],
@@ -37,18 +39,26 @@ class _HomePageState extends State<HomePage> {
         centerTitle: false,
         actions: [
           Padding(
-            padding: const EdgeInsets.only(right: 24.0),
+            padding: const EdgeInsets.only(right: 10.0),
             child: Container(
-              padding: EdgeInsets.all(16),
-              decoration: BoxDecoration(
-                color: Colors.grey[200],
-                borderRadius: BorderRadius.circular(12),
-              ),
-              child: Icon(
-                Icons.person,
-                color: Colors.grey,
-              ),
-            ),
+                padding: EdgeInsets.all(5),
+                decoration: BoxDecoration(
+                  // color: Color.fromARGB(255, 56, 155, 152),
+                  color: Colors.black,
+                  borderRadius: BorderRadius.circular(50),
+                ),
+                child: IconButton(
+                  onPressed: () => Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (context) {
+                        return EcommerceApp();
+                        // return QrScanner();
+                      },
+                    ),
+                  ),
+                  icon: Icon(Icons.home_rounded),
+                )),
           ),
         ],
       ),

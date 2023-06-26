@@ -44,6 +44,43 @@ class WelComeScreen extends StatelessWidget {
               ),
             ),
             const SizedBox(height: 18),
+            Text(
+              '3 simple steps!!',
+              textAlign: TextAlign.center,
+              style: GoogleFonts.notoSerif(
+                fontSize: 36,
+                fontWeight: FontWeight.bold,
+                color: Color.fromARGB(255, 163, 40, 155),
+              ),
+            ),
+            const SizedBox(height: 20),
+            Text(
+              '1️⃣-->Scan the barcode / QrCode on the Product Tag',
+              textAlign: TextAlign.center,
+              style: TextStyle(
+                fontSize: 20,
+                color: Color.fromARGB(255, 6, 59, 72),
+              ),
+            ),
+            const SizedBox(height: 18),
+            Text(
+              '2️⃣---> Add Product Item to the Cart 🛒',
+              textAlign: TextAlign.center,
+              style: TextStyle(
+                fontSize: 20,
+                color: Color.fromARGB(255, 148, 18, 70),
+              ),
+            ),
+            const SizedBox(height: 18),
+            Text(
+              '3️⃣---->Review Item List & Proceed to Check Out',
+              textAlign: TextAlign.center,
+              style: TextStyle(
+                fontSize: 20,
+                color: Color.fromARGB(255, 100, 17, 130),
+              ),
+            ),
+            const SizedBox(height: 18),
           ],
         ),
       ),
