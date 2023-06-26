@@ -36,10 +36,10 @@ class WelComeScreen extends StatelessWidget {
 
             // groceree gives you fresh vegetables and fruits
             Text(
-              'Helping buyers and sellers to attain their goals',
+              'This Page will help you to keep track of your expenses while shopping 🛍️',
               textAlign: TextAlign.center,
               style: TextStyle(
-                fontSize: 16,
+                fontSize: 18,
                 color: Colors.grey[700],
               ),
             ),
@@ -50,34 +50,37 @@ class WelComeScreen extends StatelessWidget {
               style: GoogleFonts.notoSerif(
                 fontSize: 36,
                 fontWeight: FontWeight.bold,
-                color: Color.fromARGB(255, 163, 40, 155),
+                color: Color.fromARGB(255, 138, 40, 163),
               ),
             ),
             const SizedBox(height: 20),
             Text(
-              '1️⃣-->Scan the barcode / QrCode on the Product Tag',
+              '1️⃣ Scan the barcode / QrCode ',
               textAlign: TextAlign.center,
               style: TextStyle(
-                fontSize: 20,
-                color: Color.fromARGB(255, 6, 59, 72),
+                fontSize: 18,
+                fontWeight: FontWeight.bold,
+                color: Color.fromARGB(255, 17, 100, 141),
               ),
             ),
-            const SizedBox(height: 18),
+            const SizedBox(height: 10),
             Text(
-              '2️⃣---> Add Product Item to the Cart 🛒',
+              '2️⃣ Add Product Item to the Cart 🛒',
               textAlign: TextAlign.center,
               style: TextStyle(
-                fontSize: 20,
-                color: Color.fromARGB(255, 148, 18, 70),
+                fontSize: 18,
+                fontWeight: FontWeight.bold,
+                color: Color.fromARGB(255, 17, 100, 141),
               ),
             ),
-            const SizedBox(height: 18),
+            const SizedBox(height: 10),
             Text(
-              '3️⃣---->Review Item List & Proceed to Check Out',
+              '3️⃣ Review Item List & Proceed to Check Out',
               textAlign: TextAlign.center,
               style: TextStyle(
-                fontSize: 20,
-                color: Color.fromARGB(255, 100, 17, 130),
+                fontSize: 18,
+                fontWeight: FontWeight.bold,
+                color: Color.fromARGB(255, 17, 100, 141),
               ),
             ),
             const SizedBox(height: 18),

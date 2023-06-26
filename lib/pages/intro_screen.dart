@@ -20,14 +20,14 @@ class IntroScreen extends StatelessWidget {
                 top: 80,
                 bottom: 20,
               ),
-              child: Image.asset('lib/images/avocado.png'),
+              child: Image.asset('lib/images/shopping-bag.png'),
             ),
 
             // we deliver groceries at your doorstep
             Padding(
               padding: const EdgeInsets.all(28.0),
               child: Text(
-                'We deliver groceries at your doorstep',
+                'Visit your local store and enjoy hassle-free online payment.',
                 textAlign: TextAlign.center,
                 style: GoogleFonts.notoSerif(
                     fontSize: 36, fontWeight: FontWeight.bold),
@@ -36,7 +36,7 @@ class IntroScreen extends StatelessWidget {
 
             // groceree gives you fresh vegetables and fruits
             Text(
-              'Fresh items everyday',
+              'Happy Shopping 🥳🛍️',
               textAlign: TextAlign.center,
               style: TextStyle(
                 fontSize: 16,

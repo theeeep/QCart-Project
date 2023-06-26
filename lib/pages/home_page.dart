@@ -77,7 +77,7 @@ class _HomePageState extends State<HomePage> {
       body: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          const SizedBox(height: 48),
+          const SizedBox(height: 30),
 
           // good morning bro
           const Padding(
@@ -112,7 +112,7 @@ class _HomePageState extends State<HomePage> {
           Padding(
             padding: const EdgeInsets.symmetric(horizontal: 24.0),
             child: Text(
-              "Fresh Items",
+              "Select item to add to Cart🛒",
               style: GoogleFonts.notoSerif(
                 //fontWeight: FontWeight.bold,
                 fontSize: 18,
